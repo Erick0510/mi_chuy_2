@@ -12,7 +12,7 @@ $in = json_encode(array("nombre"=>"$nom", "correo"=>"$correo", "password"=>"$pas
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-CURLOPT_URL => 'http://localhost/mi_chuy_2/controllers/usuarios.php?op=insert',
+CURLOPT_URL => 'http://localhost/APIs/mi_chuy_2/controllers/usuarios.php?op=insert',
 CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => '',
   CURLOPT_MAXREDIRS => 10,

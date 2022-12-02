@@ -1,5 +1,5 @@
 <?php
-$endpoint="http://localhost/mi_chuy_2/controllers/productos.php?op=selectall";
+$endpoint="http://localhost/APIs/mi_chuy_2/controllers/productos.php?op=selectall";
 $datos=json_decode(file_get_contents($endpoint), true);
 
 ?>
@@ -27,8 +27,8 @@ $datos=json_decode(file_get_contents($endpoint), true);
       <a class="navbar-brand" href="index.php"> <img  class="logo" src=".//img/logo2.png" alt=""> </a>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-        <a class="nav-link active fw-bold" href="index.php">Inicio</a>  
-          <a class="nav-link active fw-bold" href="usuarios.php">Usuarios</a>        
+        <a class="nav-link active fw-bold" href="Index.php">Inicio</a>  
+          <a class="nav-link active fw-bold" href="usuarios_2.php">Usuarios</a>        
           <a class="nav-link active fw-bold" href="productos.php">Productos</a>   
         </div>
 
@@ -39,6 +39,8 @@ $datos=json_decode(file_get_contents($endpoint), true);
       <a href="login.php" id="login_button">Cerrar sesión</i></a>
     </div>
   </nav> 
+
+  <a href="consumer/nuevoProducto.php">Nuevo Producto</a>
   <table class="table table-responsive table-hover table-bordered border-black table-grey table-dark table-striped" >
       <thead>
         <tr class="table-dark" style="text-align: center;">

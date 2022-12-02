@@ -34,7 +34,7 @@ class Productos extends Conectar
     public function postProductos($name, $image, $price, $status, $description)
     {
         $conectar=parent::Conexion();
-        $sql="insert into usuarios values(NULL, ?,?,?,?,?)";
+        $sql="insert into products values(NULL, ?,?,?,?,?)";
         $sql=$conectar->prepare($sql);
         //utilizar los parametros en la consulta
         $sql->bindValue(1,$name);

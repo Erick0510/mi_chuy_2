@@ -7,7 +7,7 @@ $in = json_encode(array("id"=>"$id"));
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-CURLOPT_URL => 'http://localhost/mi_chuy_2/controllers/productos.php?op=delete',
+CURLOPT_URL => 'http://localhost/APIs/mi_chuy_2/controllers/productos.php?op=delete',
 CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => '',
   CURLOPT_MAXREDIRS => 10,

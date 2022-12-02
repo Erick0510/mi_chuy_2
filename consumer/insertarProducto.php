@@ -1,6 +1,5 @@
 <?php 
 if ($_SERVER["REQUEST_METHOD"]=="POST"){
-    $id=$_POST['id'];
     $name=$_POST['name'];
     $image=$_POST['image']; 
     $price=$_POST['price'];
@@ -8,12 +7,12 @@ if ($_SERVER["REQUEST_METHOD"]=="POST"){
     $description=$_POST['description'];
 
 }
-$in = json_encode(array("name"=>"$name", "image"=>"$image", "price"=>"$price", "status"=>"$status", "description"=>"$description", "id"=>"$id"));
+$in = json_encode(array("name"=>"$name", "image"=>"$image", "price"=>"$price", "status"=>"$status", "description"=>"$description"));
 
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-CURLOPT_URL => 'http://localhost/APIs/mi_chuy_2/controllers/productos.php?op=update',
+CURLOPT_URL => 'http://localhost/APIs/mi_chuy_2/controllers/productos.php?op=insert',
 CURLOPT_RETURNTRANSFER => true,
 CURLOPT_ENCODING => '',
 CURLOPT_MAXREDIRS => 10,
@@ -31,7 +30,7 @@ $response = curl_exec($curl);
 
 curl_close($curl);
 
-echo "<script>alert('Registro actualizado exitosamente')
+echo "<script>alert('Registro insertado exitosamente')
 window.location.href = '../productos.php'
 </script>";
 

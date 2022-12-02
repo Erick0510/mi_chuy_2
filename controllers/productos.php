@@ -23,11 +23,14 @@ switch($_GET["op"])
     //Case para regresar un registro en particular de categoría
     case "selectid": $datos=$producto->getProductos_id($body["id"]);
                      echo json_encode($datos); break;
+                     
     case "insert": $datos=$producto->postProductos($body["name"],$body["image"], $body["price"], $body["status"], $body["description"]);
-                    echo json_encode("El registro ha sido ingresado exitosamente"); break;
-    case "update": $datos=$producto->putProductos($body["name"],$body["image"], $body["price"], $body["status"], $body["description"], $body["id"]);
-                    echo json_encode("El registro ha sido actualizado exitosamente"); break;
+        echo json_encode("El registro ha sido ingresado exitosamente"); break;
+
+    case "update": $datos=$producto->putProductos($body["name"], $body["image"], $body["price"], $body["status"], $body["description"], $body["id"]);
+        echo json_encode("El registro ha sido actualizado exitosamente"); break;
+
     case "delete": $datos=$producto->deleteProductos($body["id"]);
-                    echo json_encode("El registro ha sido eliminado exitosamente"); break;
+        echo json_encode("El registro ha sido eliminado exitosamente"); break;
 }
 ?>
