@@ -39,6 +39,8 @@ $datos=json_decode(file_get_contents($endpoint), true);
       <a href="login.php" id="login_button">Cerrar sesión</i></a>
     </div>
   </nav> 
+
+  <a href="consumer/nuevoProducto.php">Nuevo Producto</a>
   <table class="table table-responsive table-hover table-bordered border-black table-grey table-dark table-striped" >
       <thead>
         <tr class="table-dark" style="text-align: center;">
