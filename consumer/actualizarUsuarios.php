@@ -13,8 +13,8 @@
         <div class="container" style="background-color:#BBC7EE; padding-inline: 2rem; padding-block: 1rem; border-radius:0.2rem">
         <h2 style="text-align:center">Actualizar Usuario (<?php echo $_REQUEST['id']  ?>)</h2>
         <hr>
-                <form action="putUsuarios.php" method="post" style="width:50%; margin-inline: auto; justify-content: space-around;">
-                            <input type="hidden" name="id" value="<?php echo $_REQUEST['id']?>">
+ <form action="putUsuarios.php" method="post" style="width:50%; margin-inline: auto; justify-content: space-around;">
+        <input type="hidden" name="id" value="<?php echo $_REQUEST['id']?>">
                         <div class="">
                         <label for="nombre" class="">Nombre </label>
                             <input type="text" placeholder="" name="nombre" class="form-control">
