@@ -45,7 +45,7 @@
 
   <script>
     function iniciarMap(){
-    var coord = {lat:24.0096082 ,lng: -104.6342787};
+    var coord = {lat:24.0617838 ,lng: -104.6179559};
     var map = new google.maps.Map(document.getElementById('map'),{
       zoom: 50,
       center: coord
@@ -56,9 +56,13 @@
     });
 }
   </script>
-  <div id="map" style="height: 500px; width: 100%;"></div>
+  <div id="map" style="height: 500px; width: 100%;">
 <script src="script.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLJdkDe4edPXzvPqYaoM-cYUeUfJWh1rs&callback=iniciarMap"></script>
+</div>
+
+
+
 
 <!-- Burbujas Whatsapp y Phone -->
 <div class="callbutton">

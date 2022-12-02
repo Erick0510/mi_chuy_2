@@ -40,8 +40,7 @@
                         </div>
 
                         <div class="">
-                        <label for="privilegio" class="">Privilegio</label>
-                            <input type="text" placeholder=""  class="form-control" disabled>
+                        
                             <input type="hidden" placeholder="" name="privilegio" class="form-control" value="estandar">
                             
                         </div>

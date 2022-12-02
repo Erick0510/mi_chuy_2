@@ -91,10 +91,11 @@ session_start();
             <tr>
                 <td><input type="submit" value="Entrar" name="entrar"></td>
                 <td><input type="reset" value="Borrar" name="borrar"></td>
+                <a href="consumer/nuevo_usuario.php">Registrarse</a>
             </tr>
 
             <tr>
-                <a href="consumer/nuevo_usuario.php">Registrarse</a>
+                
             </tr>
 
         </table>

@@ -30,7 +30,7 @@ $response = curl_exec($curl);
 
 curl_close($curl);
 
-echo "<script>alert('Registro actualizado exitosamente')
+echo "<script>alert('Registro insertado exitosamente')
 window.location.href = '../login.php'
 </script>";
 
